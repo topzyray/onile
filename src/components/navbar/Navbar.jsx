@@ -5,11 +5,11 @@ import logo from '../../assets/logo.png';
 import './navbar.css'
 
 const Menu = () => (
-  <>
-    <p><a href="#home">FOR SALE</a></p>
-    <p><a href="#wonile">FOR RENT</a></p>
-    <p><a href="#possibility">Add Property</a></p>
-  </>
+  <div className='onile__navbar-links'>
+    <p><a href="/sale">FOR SALE</a></p>
+    <p><a href="/rent">FOR RENT</a></p>
+    <p id='button'><a href="/add_property">Add Property</a></p>
+  </div>
 )
 
 const Navbar = () => {
@@ -17,17 +17,16 @@ const Navbar = () => {
  
   return (
     <nav className="onile__navbar">
-      <div className="onile__navbar-links">
-        <div className="onile__navbar-links_logo">
+      <div className="onile__navbar-links_logo">
           <img src={logo} alt="logo" />
-        </div>
-        <div className="onile__navbar-links_container">
+      </div>
+      <div className="onile__navbar-links_container">
           <Menu />
-        </div>
       </div>
       <div className="onile__navbar-sign">
         <p>Sign up</p>
-        <button type="button">Sign in</button>
+        <button>Sign in</button>
+        {/* <button type="button">Sign in</button> */}
       </div>
       <div className="onile__navbar-menu">
         {toggleMenu

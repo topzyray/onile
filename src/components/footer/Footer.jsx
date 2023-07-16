@@ -8,23 +8,20 @@ function Footer() {
         <div className='onile__footer-image'>
             <img src={logo} alt="" />
         </div>
-        <div className='onile__footer-about'>
-            <h3>About Us</h3>
-            <p>ONILE is a revolutionizes property search in Ekiti state, Nigeria. Our user-friendly platform simplifies the process of connecting seekers with their ideal homes, We offer Ekiti property seekers an easy way to find details of property in Nigeria like homes, houses for sale or for rent within there area of locality.</p>
-        </div>
         <div className='onile__footer-links'>
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>FAQ</li>
-            </ul>
-        </div>
-        <div className='onile__footer-advert'>
-            <ul>
-                <li>Advertise with Us</li>
-                <li>Add a property</li>
-            </ul>
+            <div className='onile__footer-about'>
+                <h3>About Us</h3>
+            </div>
+            <div className='onile__footer-contact'>
+                <h3>Contact Us</h3>
+            </div>
+            <div className='onile__footer-faq'>
+                <h3>FAQ</h3>
+            </div>
+            <div className='onile__footer-advert'>
+                <h3>Advertise with Us</h3>
+                <p>Add a property</p>
+            </div>
         </div>
     </footer>
   )

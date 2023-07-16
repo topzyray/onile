@@ -12,19 +12,36 @@
      align-items: center;
 }
 
-.onile__navbar-links_logo {
-    margin-right: 2rem;
+.onile__navbar-links a {
+    text-decoration: none;
+    color: #000;
 }
+
+/* .onile__navbar-links #button {
+    width: 11rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #0A13ED;
+} */
+
+/* .onile__navbar-links_logo {
+    margin-right: 2rem;
+} */
 
 .onile__navbar-links_logo img {
     width: 222px;
     height: 93px;
 }
 
-.onile__navbar-links_container {
+/* .onile__navbar-links_container {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .onile__navbar-sign {
     display: flex;
@@ -38,7 +55,7 @@
     color: #000;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 25px;
     text-decoration: capitalize;
 
@@ -48,14 +65,14 @@
 
 .onile__navbar-sign button,
 .onile__navbar-menu_container button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     color: #fff;
     background: #3651ea;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 5px;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 10px;
     border: none;
     outline: none;
     cursor: pointer;
