@@ -12,7 +12,6 @@ function Search() {
             <div className='onile__search-container_action-btn'>
                 <button>BUY</button>
                 <button>SELL</button>
-                <button>SHORTLET</button>
             </div>
             <div className='onile__search-container_search'>
                 <form>

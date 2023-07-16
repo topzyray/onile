@@ -1,4 +1,5 @@
-import { Navbar, Search } from './components/index'
+import { Navbar, Search, Property, Advertise, Footer } from './components/index'
+
 import './App.css'
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
     <div>
       <Navbar />
       <Search />
-      
+      <Property />
+      {/* <Advertise /> */}
+      <Footer />
     </div>
   )
 }

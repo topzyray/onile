@@ -41,32 +41,61 @@
     font-family: var(--font-family);
     font-size: 4rem;
     font-weight: 700;
-    line-height: 81px;
+    /* line-height: 81px; */
 }
 
 .onile__search-container_heading p {
     font-family: var(--font-family);
     font-size: 2rem;
     font-weight: 400;
-    line-height: 40px;
+    /* line-height: 40px; */
     text-align: center;
 }
 
 .onile__search-container_action-btn button {
     width: 6rem;
-    height: 50px;
-    border-radius: 10px;
+    height: 3rem;
+    border-radius: 0.5rem;
     border: none;
     outline: none;
-    margin: 0.5rem;
-    background-color: orangered;
+    margin: 2.5rem;
+    background-color: var(--font-color);
     font-family: var(--font-family);
-    color: #fff;
+    color: #000;
     font-weight: 600;
-    font-size: 20px;
-
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.onile__search-container_search {
-
+.onile__search-container_action-btn button:hover {
+    background-color: rgb(180, 177, 177);
 }
+
+.onile__search-container_search input {
+    width: 34rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background: var(--color-search);
+    font-family: Outfit;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.onile__search-container_search button {
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #0A13ED;
+    color: #fff;
+    font-family: Outfit;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
