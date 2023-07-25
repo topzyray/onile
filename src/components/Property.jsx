@@ -7,7 +7,7 @@ import house3 from '../assets/house3.png'
 import '../css/master.css'
 
 
-function House({house, location, type, facilities, rent}) {
+function House({house, location, type, facilities, rent, nature}) {
     return (
 
         // Individual Cards
@@ -17,7 +17,7 @@ function House({house, location, type, facilities, rent}) {
                 {/* <div className="card-header">
                     <div className='badge text-bg-info'>FOR SALE</div>
                 </div> */}
-                <div className="card-type">FOR SALE</div>
+                <div className="card-type">{nature}</div>
                 <img src={house} alt="Image of Houses" className='card-img-top' />
                 <div className="card-body">
                     <h5 className='card-title'>Type: {type}</h5>
@@ -50,18 +50,18 @@ function Property() {
 
             <div className="container mb-3">
                 <div className="row g-3">
-                    <House house={house1} location="12, Adebayo Street, Ado-Ekiti" type="A fully detached duplex" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house2} location="25, Adebayo Street, Ado-Ekiti" type="2 bedroom flat" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
-                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" />
+                    <House house={house1} location="12, Adebayo Street, Ado-Ekiti" type="A fully detached duplex" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR SALE" />
+                    <House house={house2} location="25, Adebayo Street, Ado-Ekiti" type="2 bedroom flat" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR SALE" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR RENT" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR RENT" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR RENT" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR SALE" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR RENT" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR RENT" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR SALE" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR SALE" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR RENT" />
+                    <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" facilities="3-bedroom, 3 toilets" rent="#200,000 - #300,000" nature="FOR SALE" />
             </div>
 
             {/* <div className='container d-flex justify-content-center align-items-center 100-w'>
