@@ -1,5 +1,0 @@
-export {default as Navbar} from './navbar/Navbar'
-export {default as Search} from './search/Search'
-export {default as Property} from './property/Property'
-export {default as Advertise} from './advertise/Advertise'
-export {default as Footer} from './footer/Footer'

@@ -64,10 +64,8 @@
     background-color: #0A13ED;
 
     font-family: var(--font-family);
-    /* font-size: 32px; */
     font-weight: 400;
     text-align: center;
-
 }
 
 
@@ -77,8 +75,14 @@
 .onile__house {
     margin: 0.5rem;
     cursor: pointer;
-    box-shadow: ;
 }
+
+.onile__house:hover {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+
 
 .onile__house-image img {
     width: 100%;

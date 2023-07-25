@@ -1,0 +1,152 @@
+/* SEARCH COMPONENT */
+
+.onile__search {
+    background-image: url('../assets/ekiti_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.onile__search-container {
+    width:40%;
+    background: #0377B599;
+}
+
+.onile__search-container-heading h1 {
+    font-family: var(--font-family);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.onile__search-container-heading p {
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.onile__search-form input {
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background: var(--color-search);
+    font-family: var(--font-family);
+
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+    .onile__search-container {
+        width:45%;
+        
+    }
+
+    .onile__search-container h1 {
+        font-family: var(--font-family);
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .onile__search-container p {
+        font-family: var(--font-family);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .onile__search-container {
+        width: 85%;
+        height: 90%;
+    }
+
+    .onile__search-container-heading h1 {
+        font-family: var(--font-family);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .onile__search-container-heading p {
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .onile__search-form input {
+        width: 100%;
+        height: 2rem;    
+        font-size: 0.58rem;
+    }
+
+    .onile-btn-buy, .onile-btn-sell, .onile-btn-search {
+        height: 3rem;
+    }
+}
+
+/* ADVERTISE COMPONENT */
+
+/* .advert-img {
+    background-image: url('../assets/paul-hanaoka.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+} */
+
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+@media screen and (max-width: 700px) {
+    .advert-img img {
+        
+    }        
+}
+
+
+
+
+/* PROPERTY */
+
+.card:hover {
+    box-shadow: 1px 1px 1px 2px rgba(184, 179, 179, 0.729);
+}
+
+#signup {
+    border: 1px solid #fff;
+    background-color: #0A13ED;
+}
+
+#signup:hover {
+    background-color: #050aab;
+    border: 1px solid grey;
+}
+
+.card-type {
+    background: blue;
+    color: #fff;
+    font-style: var(--font-family);
+    text-align: center;
+    font-weight: bolder;
+    width: 7.5rem;
+    margin-bottom: -2.5rem;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding-top: 0.1rem;
+    padding-bottom: 7rem;
+    background: #699BF74D;
+    height: 100%;
+}
+
+.social {
+    cursor: pointer;
+}

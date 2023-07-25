@@ -63,6 +63,15 @@
     cursor: pointer;
 }
 
+.onile__navbar-links_container p:hover,
+.onile__navbar-sign p:hover,
+.onile__navbar-menu_container p:hover,
+button:hover, input:hover {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+
 .onile__navbar-sign button,
 .onile__navbar-menu_container button {
     padding: 1rem 1.5rem;

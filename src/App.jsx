@@ -1,19 +1,22 @@
-import { Routes } from 'react-router-dom'
-import { Navbar, Search, Property, Advertise, Footer } from './components/index'
-
-import './App.css'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Home, Signin, Signup, AddProperty, Header, Footer } from './components/component_index'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div>
-        <Routes path='/' element={<App />} />
-
-        <Navbar />
-        <Search />
-        <Property />
-        <Advertise />
-        <Footer />
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route>
+          <Route path='/' element={<Home />} />
+          <Route path='/signin' element={<Signin />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/addproperty' element={<AddProperty />} />
+        </Route>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
