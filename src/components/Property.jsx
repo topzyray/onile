@@ -1,8 +1,19 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
-import house1 from '../assets/house1.png'
-import house2 from '../assets/house2.png'
-import house3 from '../assets/house3.png'
+import house1 from '../assets/house1.jpg'
+import house2 from '../assets/house2.jpg'
+import house3 from '../assets/house3.jpg'
+import house4 from '../assets/house4.jpg'
+import house5 from '../assets/house5.jpg'
+import house6 from '../assets/house6.jpg'
+import house7 from '../assets/house7.jpg'
+import house8 from '../assets/house8.jpg'
+import house9 from '../assets/house9.jpg'
+import house10 from '../assets/house10.jpg'
+import house11 from '../assets/house11.jpg'
+import house12 from '../assets/house12.jpg'
+import house13 from '../assets/house13.jpg'
+import house14 from '../assets/house14.jpg'
 
 import '../css/master.css'
 
@@ -15,7 +26,7 @@ function House({house, details, type, facilities, price}) {
         <div className="col-12 col-md-6 col-lg-4">
             <div className="card">
                 <div className="card-type">{type}</div>
-                <img src={house} alt="Image of Houses" className='card-img-top rounded-3 ' />
+                <img src={house} alt="Image of Houses" className='card-img-top rounded-3' width={300} height={300} />
                 <div className="card-body">
                     <h5 className='card-title'>{price}</h5>
                     <p className='card-text'>{details}</p>
@@ -49,15 +60,17 @@ function Property() {
                     <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="A detached duplex" price="#200,000 - #300,000" type="FOR SALE" />
                     <House house={house2} details="25, Adebayo Street, Ado-Ekiti" facilities="2 bedroom flat" price="#200,000 - #300,000" type="FOR SALE" />
                     <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house4} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
+                    <House house={house5} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
+                    <House house={house6} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house7} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
+                    <House house={house8} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
+                    <House house={house9} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house10} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
+                    <House house={house12} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house13} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house14} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
             </div>
 
             <div className='container d-flex justify-content-center align-items-center 100-w mt-3'>

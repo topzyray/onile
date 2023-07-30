@@ -1,4 +1,5 @@
 import { Header, Search, Property, Advertise, Footer } from './component_index'
+import Testing from './Testing'
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <Property />
         <Advertise />
         {/* <Footer /> */}
+        {/* <Testing /> */}
     </>
   )
 }

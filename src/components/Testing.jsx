@@ -7,7 +7,8 @@ function Testing() {
     // console.log(data[0].image)
   return (
     <div>
-        <img src="../assets/house1.jpg" alt="" />
+        <img src="../assets/house1.jpg" alt="house" />
+        <h1>Hello World</h1>
     </div>
   )
 }
