@@ -26,7 +26,7 @@
 
 .onile__search-form input {
     width: 20rem;
-    height: 3rem;
+    height: 2.3rem;
     border: none;
     outline: none;
     background: var(--color-search);
@@ -101,6 +101,22 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .advert-img {
+        width: 500px;
+    }
+
+    .advert-text {
+        font-family: Poor Richard;
+        font-size: 3rem;
+        line-height: 77px;
+        text-align: left;
+    }
+    
+    .advert-text span {
+        font-family: Poor Richard;
+        font-size: 3.2rem;
+        line-height: 90px;
+    }
     
 }
 
