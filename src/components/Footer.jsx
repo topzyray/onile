@@ -10,26 +10,31 @@ function Footer() {
     <footer className='container-fluid text-center'>
         <div className='row row-cols-lg-5 row-cols-md-3 row-cols-sm-1 mt-5' >
             <div className='col'>
-                <Link to='/'><img src={logo} alt="" /></Link>
+                <Link to='/'><img src={logo} alt="" width="200px" /></Link>
             </div>
 
             <div className='col'>
-                <button className='btn btn-light btn-lg fw-bold fs-4 shadow text-secondary'>About Us</button>
+                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Contact Us</button> <br/>
+                <p className="text-center fw-bold">Adebayo, Ado Ekiti <br/>123456789 <br/>support@onile.com</p>
             </div>
 
             <div className='col'>
-                <button className='btn btn-light btn-lg fw-bold fs-4 shadow text-secondary'>Contact Us</button> <br/>
+                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Link</button> <br/>
+                <button className='btn btn-sm btn-link'>Partners</button> <br/>
+                <button className='btn btn-sm btn-link'>Career</button> <br/>
+                <button className='btn btn-sm btn-link'>About us</button>
+                
+            </div>
+
+            <div className='col'>
+                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Advertise with Us</button> <br/>
+                <button className='btn btn-sm btn-outline-primary footer-btn'>Add a property</button>
+            </div>
+
+            <div className='col'>
+                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Social Media</button> <br/>
                 <img src={facebook} alt="Facebook icon" className='p-1 social' />
                 <img src={instagram} alt="Instagram icon" className='p-1 social' />
-            </div>
-
-            <div className='col'>
-                <button className='btn btn-light btn-lg fw-bold fs-4 shadow text-secondary'>FAQ</button>
-            </div>
-
-            <div className='col'>
-                <button className='btn btn-light btn-lg fw-bold fs-4 shadow text-secondary'>Advertise with Us</button> <br/>
-                <button className='btn btn-sm text-primary fw-bold fs-5'>Add a property</button>
             </div>
         </div>
     </footer>

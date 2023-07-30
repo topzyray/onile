@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import advert_image from '../assets/paul-hanaoka.png'
 
 function Advertise() {
@@ -7,16 +8,16 @@ function Advertise() {
       <div className='container text-center border rounded'>
         <div className="row">
           <div className="col bg-primary">
-            <p className='fs-5 text-left'>Take Us With You<br/>Keep <span id='onile'>ONILE</span> in the palm of your hand throughout your rental journey.</p>
+            <p className='advert-text text-white'><span className='text-dark'>Take Us With You. </span><br/> Keep <span className='text-dark'>ONILE</span> in the palm of your hand throughout your rental journey.</p>
           </div>
           <div className="col">
-            <img src={advert_image} alt="Advertise Image" className='img-responsive object-fit' />
+            <img src={advert_image} alt="Advertise Image" className='advert-img' />
           </div>
         </div>
       </div>
 
       <div className='container d-flex bg-primary text-white fs-5 justify-content-center align-items-center mt-5 mb-5 p-1'>
-        <p className='pt-2'>Are you an estate agent or developer? List your property for FREE. <span className='btn btn-secondary btn-lg m-1 ms-3' id='signup'>Sign up</span></p>
+        <p className='pt-2'>Are you an estate agent or developer? List your property for FREE. <span className='btn btn-secondary btn-lg m-1 ms-3' id='signup'><Link to='/signup'>Sign up</Link></span></p>
       </div>
     </section>
   )

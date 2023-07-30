@@ -87,26 +87,46 @@
 
 /* ADVERTISE COMPONENT */
 
-/* .advert-img {
-    background-image: url('../assets/paul-hanaoka.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-} */
+.advert-text {
+    font-family: Poor Richard;
+    font-size: 4.25rem;
+    line-height: 77px;
+    text-align: left;
+}
 
+.advert-text span {
+    font-family: Poor Richard;
+    font-size: 5rem;
+    line-height: 90px;
+}
 
 @media screen and (max-width: 1000px) {
     
 }
 
 @media screen and (max-width: 700px) {
-    .advert-img img {
-        
-    }        
+    .advert-img {
+        width: 500px;
+    }
+    
+    .advert-text {
+        font-family: Poor Richard;
+        font-size: 3rem;
+        line-height: 77px;
+        text-align: left;
+    }
+    
+    .advert-text span {
+        font-family: Poor Richard;
+        font-size: 3.2rem;
+        line-height: 90px;
+    }
 }
 
-
+#signup a {
+    text-decoration: none;
+    color: white;
+}
 
 
 /* PROPERTY */
@@ -150,3 +170,7 @@ footer {
 .social {
     cursor: pointer;
 }
+
+/* footer .footer-btn {
+    color: red;
+} */

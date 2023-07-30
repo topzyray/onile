@@ -10,7 +10,7 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-body-light">
       <Container>
-        <Navbar.Brand as={Link} to='/'><img src={logo} alt="logo" /></Navbar.Brand>
+        <Navbar.Brand as={Link} to='/'><img src={logo} alt="logo" width="200px" /></Navbar.Brand>
       </Container>
 
       <Container>  
