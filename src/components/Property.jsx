@@ -57,20 +57,20 @@ function Property() {
 
             <div className="container mb-3">
                 <div className="row g-3">
-                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="A detached duplex" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house2} details="25, Adebayo Street, Ado-Ekiti" facilities="2 bedroom flat" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house3} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house4} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house5} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house6} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house7} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house8} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house9} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house10} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR RENT" />
-                    <House house={house12} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house13} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
-                    <House house={house14} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="#200,000 - #300,000" type="FOR SALE" />
+                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
+                    <House house={house2} details="2, Akinola Street, Ado-Ekiti" facilities="5 bedroom flat" price="8,500,000" type="FOR SALE" />
+                    <House house={house3} details="Block 11, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,300,000" type="FOR RENT" />
+                    <House house={house4} details="29, Aladegbaye Avenue, Ikere-Ekiti" facilities="4 bedrrom bungalow" price="250,000" type="FOR RENT" />
+                    <House house={house5} details="Opposite Fed. Univ., Ido-Ekiti" facilities="4 block of 3 bedroom flat" price="300,000" type="FOR RENT" />
+                    <House house={house6} details="33, Iworoko Area, Ado-Ekiti" facilities="4 bedroom bungalow" price="29,000,000" type="FOR SALE" />
+                    <House house={house7} details="51, Iyin road, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,100,000" type="FOR RENT" />
+                    <House house={house8} details="7, Ikere road, Ado-Ekiti" facilities="2 bedroom bungalow" price="200,000" type="FOR RENT" />
+                    <House house={house9} details="5, GRA, Ado-Ekiti" facilities="3 bedroom bungalow" price="30,000,000" type="FOR SALE" />
+                    <House house={house10} details="29, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="42,000,000" type="FOR SALE" />
+                    <House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="190,000" type="FOR RENT" />
+                    <House house={house12} details="2, Palace road, Are-Ekiti" facilities="4 bedrrom bungalow" price="8,300,000" type="FOR SALE" />
+                    <House house={house13} details="59, Afao road, Ado-Ekiti" facilities="30 room hotel" price="55,000,000" type="FOR SALE" />
+                    <House house={house14} details="6, GRA, Ado-Ekiti" facilities="5 bedroom bungalow" price="42,000,000" type="FOR SALE" />
             </div>
 
             <div className='container d-flex justify-content-center align-items-center 100-w mt-3'>
