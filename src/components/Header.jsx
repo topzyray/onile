@@ -17,13 +17,13 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/signin'><Button variant="light" size='lg' className='fw-bold fs-4 shadow text-secondary'>FOR SALE</Button></Nav.Link>
-            <Nav.Link as={Link} to='/sign'><Button variant="light" size='lg' className='fw-bold fs-4 shadow text-secondary'>FOR RENT</Button></Nav.Link>
-            <Nav.Link as={Link} to='/signin'><Button variant="primary" size='lg'>Add Property</Button></Nav.Link>
+            <Nav.Link as={Link} to='/signin'><Button variant="light" size='sm' className='fw-bold fs-4 shadow text-secondary'>FOR SALE</Button></Nav.Link>
+            <Nav.Link as={Link} to='/sign'><Button variant="light" size='sm' className='fw-bold fs-4 shadow text-secondary'>FOR RENT</Button></Nav.Link>
+            <Nav.Link as={Link} to='/signin'><Button variant="primary" size='sm'>Add Property</Button></Nav.Link>
           </Nav>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/signin'><Button variant="outline-secondary" size='lg'>Sign In</Button></Nav.Link>
-            <Nav.Link as={Link} to='/signup'><Button variant="primary" size='lg'>Sign Up</Button></Nav.Link>
+            <Nav.Link as={Link} to='/signin'><Button variant="outline-secondary" size='sm'>Sign In</Button></Nav.Link>
+            <Nav.Link as={Link} to='/signup'><Button variant="primary" size='sm'>Sign Up</Button></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
