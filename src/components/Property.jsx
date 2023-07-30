@@ -28,7 +28,7 @@ function House({house, details, type, facilities, price}) {
                 <div className="card-type">{type}</div>
                 <img src={house} alt="Image of Houses" className='card-img-top rounded-3' width={300} height={300} />
                 <div className="card-body">
-                    <h5 className='card-title'>{price}</h5>
+                    <h5 className='card-title'>N{price}</h5>
                     <p className='card-text'>{details}</p>
                     <p className='card-text'>{facilities}</p>
                 </div>
