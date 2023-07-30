@@ -13,13 +13,13 @@ function Search() {
             </div>
             <div className='text-center'>
                 <div className='d-flex justify-content-center align-items-center mb-2'>
-                    <button type='button' className='btn btn-light m-1 onile-btn-buy'>BUY</button>
-                    <button type='button' className='btn btn-light m-1 onile-btn-sell'>SELL</button>
+                    <button type='button' className='btn btn-light m-1'>BUY</button>
+                    <button type='button' className='btn btn-light m-1'>SELL</button>
                 </div>
                 <div className='onile__search-form'>
                     <form className='form_container'>
                         <input type="text" className='input rounded' placeholder='Search by location or point of interest' />
-                        <button type='button' className='btn btn-primary m-1 ms-3 onile-btn-search'>Search</button>
+                        <button type='button' className='btn btn-primary m-1 ms-3'>Search</button>
                         {/* <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2"/>
                             <button class="btn btn-primary" type="button" id="button-addon2">Button</button>

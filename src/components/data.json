@@ -1,6 +1,6 @@
 [
     {
-        "image": "../assets/house1.jpg",
+        "image": "./house1.jpg",
         "type": "2 bedroom flat",
         "location": "12, Adebayo Street, Ado-Ekiti",
         "rent": "200,000"

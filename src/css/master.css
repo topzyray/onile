@@ -40,7 +40,6 @@
 @media screen and (max-width: 1000px) {
     .onile__search-container {
         width:45%;
-        
     }
 
     .onile__search-container h1 {
@@ -117,7 +116,6 @@
         font-size: 3.2rem;
         line-height: 90px;
     }
-    
 }
 
 @media screen and (max-width: 700px) {
@@ -166,10 +164,10 @@
     color: #fff;
     font-style: var(--font-family);
     text-align: center;
-    font-weight: bolder;
-    width: 7.5rem;
-    margin-bottom: -2.5rem;
-    padding: 0.5rem;
+    font-weight: normal;
+    width: 5.5rem;
+    margin-bottom: -1.5rem;
+    padding: 0rem;
     z-index: 1;
 }
 
