@@ -52,7 +52,7 @@ function Signin()  {
             </form>
             <form action="#">
                 <div className='d-grid'>
-                   <button className='btn btn-light' type='button'> <span><img src={googleLogo} alt="logo" width='20px' /></span> Sign in with Google</button>
+                   <button className='btn btn-outline-primary' type='button'> <span><img src={googleLogo} alt="logo" width='20px' /></span> Sign in with Google</button>
                 </div>
             </form>
             <p className='mt-2'>

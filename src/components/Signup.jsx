@@ -59,7 +59,7 @@ function Signup() {
             </form>
             <form action="">
                 <div className='d-grid'>
-                    <button className='btn btn-light' type="button"> <span><img src={googleLogo} alt="logo" width='20px' /></span> Sign Up with Google</button>
+                    <button className='btn btn-outline-primary' type="button"> <span><img src={googleLogo} alt="logo" width='20px' /></span> Sign Up with Google</button>
                 </div>
             </form>
 
