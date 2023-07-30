@@ -28,7 +28,7 @@ function Footer() {
 
             <div className='col'>
                 <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Advertise with Us</button> <br/>
-                <button className='btn btn-sm btn-outline-primary footer-btn'>Add a property</button>
+                <Link to='https://docs.google.com/forms/d/e/1FAIpQLSeyTSCuuT6n4idy9QmQNb_3D9kmHfk8BJHfe-4XQ2j5JJYl0Q/viewform?usp=sf_link' target='_blank'><button className='btn btn-sm btn-outline-primary footer-btn'>Add a property</button></Link>
             </div>
 
             <div className='col'>

@@ -18,8 +18,8 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/signin'><Button variant="light" size='sm' className='fw-bold shadow text-secondary'>FOR SALE</Button></Nav.Link>
-            <Nav.Link as={Link} to='/sign'><Button variant="light" size='sm' className='fw-bold shadow text-secondary'>FOR RENT</Button></Nav.Link>
-            <Nav.Link as={Link} to='/signin'><Button variant="primary" size='sm'>Add Property</Button></Nav.Link>
+            <Nav.Link as={Link} to='/signin'><Button variant="light" size='sm' className='fw-bold shadow text-secondary'>FOR RENT</Button></Nav.Link>
+            <Nav.Link as={Link} to='https://docs.google.com/forms/d/e/1FAIpQLSeyTSCuuT6n4idy9QmQNb_3D9kmHfk8BJHfe-4XQ2j5JJYl0Q/viewform?usp=sf_link' action='_target'><Button variant="primary" size='sm'>Add Property</Button></Nav.Link>
           </Nav>
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/signin'><Button variant="outline-secondary" size='sm'>Sign In</Button></Nav.Link>
