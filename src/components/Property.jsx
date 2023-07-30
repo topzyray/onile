@@ -33,7 +33,7 @@ function House({house, details, type, facilities, price}) {
                     <p className='card-text'>{facilities}</p>
                 </div>
                 <div className="card-footer">
-                    <button type='button' className='btn btn-outline-primary'>View Details</button>
+                    <button type='button' className='btn btn-outline-primary' onClick={() => alert('Call +234701234567911 for more details')}>View Details</button>
                 </div>
             </div>
         </div>
