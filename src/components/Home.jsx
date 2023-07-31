@@ -1,16 +1,12 @@
-import { Header, Search, Property, Advertise, Footer } from './component_index'
-import Testing from './Testing'
+import { Search, Property, Advertise} from './component_index'
 
 
 function Home() {
   return (
     <>
-        {/* <Header /> */}
         <Search />
         <Property />
         <Advertise />
-        {/* <Footer /> */}
-        {/* <Testing /> */}
     </>
   )
 }
