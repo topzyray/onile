@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,8 +7,9 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom'
 
 function Header() {
+  
   return (
-    <Navbar expand="lg" className="bg-body-light">
+    <Navbar expand="lg" className="bg-body-primary" sticky="top" bg="light" data-bs-theme="light">
       <Container>
         <Navbar.Brand as={Link} to='/'><img src={logo} alt="logo" width={200} /></Navbar.Brand>
       </Container>
