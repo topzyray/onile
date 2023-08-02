@@ -1,4 +1,4 @@
-import { Search, Property, Advertise} from './component_index'
+import { Search, Property, Advertise, DBTest} from './component_index'
 
 
 function Home() {
@@ -7,6 +7,7 @@ function Home() {
         <Search />
         <Property />
         <Advertise />
+        {/* <DBTest /> */}
     </>
   )
 }

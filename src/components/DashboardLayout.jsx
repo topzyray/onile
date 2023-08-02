@@ -6,7 +6,8 @@ function DashboardLayout() {
     <div>
         <div className="d-flex">
             <div className="col-auto">
-                <DashboardSidebar/>
+                {/* <DashboardSidebar/> */}
+                <h1>Dashboard Layout</h1>
             </div>
 
         </div>

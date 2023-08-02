@@ -1,5 +1,5 @@
 import React from 'react'
-import 'bootstrap-icons/font/'
+// import 'bootstrap-icons/font/'
 
 function DashboardSidebar() {
   return (

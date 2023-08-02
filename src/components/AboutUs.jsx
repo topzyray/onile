@@ -1,0 +1,52 @@
+import React from 'react'
+import house1 from '../assets/house1.jpg'
+import olayinka from '../assets/olayinka.jpg'
+import tope from '../assets/tope.jpg'
+
+function Team({image, name, role, about, href}) {
+    return (
+
+        <div className="col-12 col-md-6 col-lg-4">
+            <div className="card text-center" >
+                <div><img src={image} alt="Photos of Onile Core Team" className='card-img-top' style={{borderRadius: "50%", width: "300px", height: "300px"}} /></div>
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <ul className='list-group list-group-flush'>
+                        <li className="list-group-item">{role}</li>
+                        <li className="list-group-item">{about}</li>
+                    </ul>
+                </div>
+                <div className="card-footer">
+                    <a href="#" className="card-link" target='_blank'>LinkedIn</a>
+                    <a href="#" className="card-link" target='_blank'>Twitter</a>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+
+const AboutUs = () => {
+  return (
+    <section>
+        <div className="container rounded-5 mt-3 mb-3 pt-3 border">
+            <div className='text-center'><button className='btn btn-primary btn-lg text-center p-2 m-5 fw-bold fs-1'>Meet Our Core Team at ONILE</button></div>
+
+            <div className="container mb-3">
+                <div className="row g-3">
+                    <Team image={house1} name="Akpevwe Praise" role="Software Developer" about="(Team Mentor)" />
+                    <Team image={olayinka} name="Ilesanmi Olayinka" role="Product Manager" about="A serial and digital entrepreneur. He is the CEO of Eazydov Global Concept, a multimedia company based in Ibadan. He is also an associate product manager and team lead of this capstone project, ONILE." />
+                    <Team image={house1} name="Joshua" role="Product Manager" about="Product Manager" />
+                    <Team image={house1} name="Bamisile Mary" role="Front-End Developer" about="Front-End Developer" />
+                    <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="Front-End Developer" />
+                    <Team image={house1} name="Akinloye" role="Product Designer" about="Product Designer" />
+                    <Team image={house1} name="Olayinka" role="Backend Developer" about="Backend Developer" />
+                </div>
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default AboutUs;

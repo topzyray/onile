@@ -5,20 +5,6 @@ import googleLogo from '../assets/google.svg'
 import divider from '../assets/divider.png'
 
 function Signin()  {
-    // const [data, setData] = useState({
-    //     email: '',
-    //     password: '',
-    //     remeberme: "checked",
-    // })
-
-    // function handleSubmit() {
-    //     setData((prevData) => (
-    //         {...prevData,
-
-    //         }
-    //     ))
-    // }
-
 
   return (
     <div className='signin template d-flex justify-content-center align-items-center w-100 vh-100 bg-light' id='onile__signin-container'>
