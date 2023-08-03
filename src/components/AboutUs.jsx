@@ -2,6 +2,9 @@ import React from 'react'
 import house1 from '../assets/house1.jpg'
 import olayinka from '../assets/olayinka.jpg'
 import tope from '../assets/tope.jpg'
+import mary from '../assets/mary.jpg'
+import akinloye from '../assets/akinloye.jpg'
+import joshua from '../assets/joshua.jpg'
 
 function Team({image, name, role, about, href}) {
     return (
@@ -37,10 +40,10 @@ const AboutUs = () => {
                 <div className="row g-3">
                     <Team image={house1} name="Akpevwe Praise" role="Software Developer" about="(Team Mentor)" />
                     <Team image={olayinka} name="Ilesanmi Olayinka" role="Product Manager" about="A serial and digital entrepreneur. He is the CEO of Eazydov Global Concept, a multimedia company based in Ibadan. He is also an associate product manager and team lead of this capstone project, ONILE." />
-                    <Team image={house1} name="Joshua" role="Product Manager" about="Product Manager" />
-                    <Team image={house1} name="Bamisile Mary" role="Front-End Developer" about="Front-End Developer" />
-                    <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="Front-End Developer" />
-                    <Team image={house1} name="Akinloye" role="Product Designer" about="Product Designer" />
+                    <Team image={joshua} name="Joshua Akintade" role="Product Manager" about="A Social media manager and WordPress developer and one of the product managers on the Onile project." />
+                    <Team image={mary} name="Mary Bamisile" role="Front-End Developer" about="A trained bio-chemist and also one of the front-end developers on the Onile project." />
+                    <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="A tech lover, cybersecurity enthusiast and one of the front-end developer on the Onile projec." />
+                    <Team image={akinloye} name="Akinloye Adegboye" role="Product Designer" about="A freelance Graphic designer, UI/UX Designer and product designer on the ONILE project." />
                     <Team image={house1} name="Olayinka" role="Backend Developer" about="Backend Developer" />
                 </div>
             </div>
