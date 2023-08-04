@@ -15,7 +15,7 @@ function Footer() {
 
             <div className='col'>
                 <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Contact Us</button> <br/>
-                <p className="text-center"><span className="text-center fw-bold">Support:<br/> <a href="mailto:support@onile.com" target="_blank">support@onile.com</a> <br/> +23480333-ONILE</span> <br/> Praise: 08023752132, Mary: 09032028121, Olayinka: 07063038041, Joshua: 08146747070, Akinloye: 07034514460, Olutomiwa: 09075264672, Tope: 07035527946 </p>
+                <p className="text-center"><span className="text-center fw-bold">Support:<br/> <a href="mailto:support@onile.com" target="_blank">support@onile.com</a> <br/> +23480333-ONILE</span></p>
             </div>
 
             <div className='col'>
