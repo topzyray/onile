@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Route } from 'react-router-dom';
-// import Signup from './Signup';
+import { Link } from 'react-router-dom';
 import googleLogo from '../assets/google.svg'
 import divider from '../assets/divider.png'
 

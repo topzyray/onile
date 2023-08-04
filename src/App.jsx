@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home, Signin, Signup, AddProperty, Header, Footer, DashboardLayout, AboutUs, Career, CoreTeam, Error } from './components/component_index'
+import { Home, Signin, Signup, AddProperty, Header, Footer, AboutUs, Career, CoreTeam, Error } from './components/component_index'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -22,15 +22,9 @@ function App() {
         </Route>
       </Routes>
 
-      {/* <Routes>
-        <Route>
-          <Route path='/dashboard' element={<DashboardLayout />} />
-        </Route>
-      </Routes> */}
-
       <Footer />
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;

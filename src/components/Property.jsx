@@ -1,19 +1,18 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button'
-import house1 from '../assets/house1.jpg'
-import house2 from '../assets/house2.jpg'
-import house3 from '../assets/house3.jpg'
-import house4 from '../assets/house4.jpg'
-import house5 from '../assets/house5.jpg'
-import house6 from '../assets/house6.jpg'
-import house7 from '../assets/house7.jpg'
-import house8 from '../assets/house8.jpg'
-import house9 from '../assets/house9.jpg'
-import house10 from '../assets/house10.jpg'
-import house11 from '../assets/house11.jpg'
-import house12 from '../assets/house12.jpg'
-import house13 from '../assets/house13.jpg'
-import house14 from '../assets/house14.jpg'
+import React from 'react';
+import house1 from '../assets/house1.jpg';
+import house2 from '../assets/house2.jpg';
+import house3 from '../assets/house3.jpg';
+import house4 from '../assets/house4.jpg';
+import house5 from '../assets/house5.jpg';
+import house6 from '../assets/house6.jpg';
+import house7 from '../assets/house7.jpg';
+import house8 from '../assets/house8.jpg';
+import house9 from '../assets/house9.jpg';
+import house10 from '../assets/house10.jpg';
+import house11 from '../assets/house11.jpg';
+import house12 from '../assets/house12.jpg';
+import house13 from '../assets/house13.jpg';
+import house14 from '../assets/house14.jpg';
 
 import '../css/master.css'
 
@@ -87,35 +86,4 @@ function Property() {
   )
 }
 
-export default Property
-
-
-
-
-
-// {/* For price Section */}
-
-// <div className="container border mt-3 mb-3 pt-3 rounded onile__for-price ">
-// <div className='container d-flex justify-content-center align-items-center 100-w'>
-//     <div className="row">
-//         <div className="col">
-//             <p className='btn btn-primary btn-lg'>Explore houses  available for price</p>
-//         </div>
-//     </div>
-// </div>
-
-// <div className="container mb-3">
-//     <div className="row g-3">
-//         <House house={house1} location="12, Adebayo Street, Ado-Ekiti" type="A fully detached duplex" price="#200,000 - #300,000" />
-//         <House house={house2} location="25, Adebayo Street, Ado-Ekiti" type="2 bedroom flat" price="#200,000 - #300,000" />
-//         <House house={house3} location="29, Adebayo Street, Ado-Ekiti" type="4 bedrrom bungalow" price="#200,000 - #300,000" />
-//     </div>
-// </div>
-
-// <div className='container d-flex justify-content-center align-items-center 100-w'>
-//     <div className="row">
-//         <div className="col">
-//             <p className='btn btn-primary btn-lg'>View More</p>
-//         </div>
-//     </div>
-// </div>
+export default Property;
