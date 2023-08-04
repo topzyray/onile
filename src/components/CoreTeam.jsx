@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../assets/avatar.jpg'
+import olutomiwa from '../assets/olutomiwa.jpg'
 import olayinka from '../assets/olayinka.jpg'
 import tope from '../assets/tope.png'
 import mary from '../assets/mary.jpg'
@@ -43,7 +43,7 @@ const AboutUs = () => {
                     <Team image={mary} name="Mary Bamisile" role="Front-End Developer" about="A trained bio-chemist and also one of the front-end developers on the Onile project." linkedin="https://www.linkedin.com/in/mary-bamisile-a30a2a26a/" twitter="#" />
                     <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="A tech lover, cybersecurity enthusiast and one of the front-end developer on the Onile projec." linkedin="https://www.linkedin.com/in/taiwotopesunday/" twitter="https://twitter.com/taiwotopesunday/" />
                     <Team image={akinloye} name="Akinloye Adegboye" role="Product Designer" about="A freelance Graphic designer, UI/UX Designer and product designer on the ONILE project." linkedin="https://www.linkedin.com/in/adegboye-akinloye-741291256/" twitter="https://twitter.com/hay_keyz" />
-                    <Team image={avatar} name="Olutomiwa Olatunji" role="Backend Developer" about="Backend Developer" linkedin="https://www.linkedin.com/in/olutomiwa-olatunji-421a03205/" twitter="#" />
+                    <Team image={olutomiwa} name="Olutomiwa Olatunji" role="Backend Developer" about="An Engineering student in FUOYE, currently acquiring skills in Cybersecurity and Web3 and backend developer on the Onile project." linkedin="https://www.linkedin.com/in/olutomiwa-olatunji-421a03205/" twitter="#" />
                 </div>
             </div>
         </div>
