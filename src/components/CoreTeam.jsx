@@ -1,12 +1,13 @@
 import React from 'react'
-import house1 from '../assets/house1.jpg'
+import avatar from '../assets/avatar.jpg'
 import olayinka from '../assets/olayinka.jpg'
 import tope from '../assets/tope.JPG'
 import mary from '../assets/mary.jpg'
 import akinloye from '../assets/akinloye.jpg'
 import joshua from '../assets/joshua.jpg'
+import akpevwe from '../assets/akpevwe.jpg'
 
-function Team({image, name, role, about, href}) {
+function Team({image, name, role, about, linkedin, twitter}) {
     return (
 
         <div className="col-12 col-md-6 col-lg-4">
@@ -20,15 +21,13 @@ function Team({image, name, role, about, href}) {
                     </ul>
                 </div>
                 <div className="card-footer">
-                    <a href="#" className="card-link" target='_blank'>LinkedIn</a>
-                    <a href="#" className="card-link" target='_blank'>Twitter</a>
+                    <a href={linkedin} className="card-link" target='_blank'>LinkedIn</a>
+                    <a href={twitter} className="card-link" target='_blank'>Twitter</a>
                 </div>
             </div>
         </div>
     )
 }
-
-
 
 const AboutUs = () => {
   return (
@@ -38,13 +37,13 @@ const AboutUs = () => {
 
             <div className="container mb-3">
                 <div className="row g-3">
-                    <Team image={house1} name="Akpevwe Praise" role="Software Developer" about="(Team Mentor)" />
-                    <Team image={olayinka} name="Ilesanmi Olayinka" role="Product Manager" about="A serial and digital entrepreneur, the CEO of Eazydov Global Concept (a multimedia company based in Ibadan), an associate product manager and lead of Onile project team." />
-                    <Team image={joshua} name="Joshua Akintade" role="Product Manager" about="A Social media manager and WordPress developer and one of the product managers on the Onile project." />
-                    <Team image={mary} name="Mary Bamisile" role="Front-End Developer" about="A trained bio-chemist and also one of the front-end developers on the Onile project." />
-                    <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="A tech lover, cybersecurity enthusiast and one of the front-end developer on the Onile projec." />
-                    <Team image={akinloye} name="Akinloye Adegboye" role="Product Designer" about="A freelance Graphic designer, UI/UX Designer and product designer on the ONILE project." />
-                    <Team image={house1} name="Tomiwa" role="Backend Developer" about="Backend Developer" />
+                    <Team image={akpevwe} name="Akpevwe Essi" role="Full-Stack Software Engineer" about="A self-taught full-stack software engineer and technical writer with a passion for creating scalable and maintainable mobile and web applications. Also the team mentor on the Onile project" linkedin="https://www.linkedin.com/in/akpevwe-essi-45416518b/" twitter="#" />
+                    <Team image={olayinka} name="Ilesanmi Olayinka" role="Product Manager" about="A serial and digital entrepreneur, the CEO of Eazydov Global Concept (a multimedia company based in Ibadan), an associate product manager and lead of Onile project team." linkedin="https://www.linkedin.com/in/ilesanmi-olayinka-56495aa9/" twitter="#" />
+                    <Team image={joshua} name="Joshua Akintade" role="Product Manager" about="A Social media manager and WordPress developer and one of the product managers on the Onile project." linkedin="https://www.linkedin.com/in/joshua-akintade-6106961b0/" twitter="#" />
+                    <Team image={mary} name="Mary Bamisile" role="Front-End Developer" about="A trained bio-chemist and also one of the front-end developers on the Onile project." linkedin="https://www.linkedin.com/in/mary-bamisile-a30a2a26a/" twitter="#" />
+                    <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="A tech lover, cybersecurity enthusiast and one of the front-end developer on the Onile projec." linkedin="https://www.linkedin.com/in/taiwotopesunday/" twitter="https://twitter.com/taiwotopesunday/" />
+                    <Team image={akinloye} name="Akinloye Adegboye" role="Product Designer" about="A freelance Graphic designer, UI/UX Designer and product designer on the ONILE project." linkedin="https://www.linkedin.com/in/adegboye-akinloye-741291256/" twitter="#" />
+                    <Team image={avatar} name="Olutomiwa Olatunji" role="Backend Developer" about="Backend Developer" linkedin="https://www.linkedin.com/in/olutomiwa-olatunji-421a03205/" twitter="#" />
                 </div>
             </div>
         </div>
