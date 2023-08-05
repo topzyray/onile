@@ -1,10 +1,10 @@
-import { Search, Property, Advertise, DBTest} from './component_index'
+import { Search, Property, Advertise, CarouselComponent, DBTest} from './component_index'
 
 
 function Home() {
   return (
     <>
-        <Search />
+        <CarouselComponent />
         <Property />
         <Advertise />
         {/* <DBTest /> */}
