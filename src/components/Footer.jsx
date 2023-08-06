@@ -10,7 +10,7 @@ function Footer() {
     <footer className='container-fluid'>
         <div className='row row-cols-lg-5 row-cols-md-3 row-cols-sm-1 mt-5 ' >
             <div className='col'>
-                <Link to='/'><img src={logo} alt="" width="200px" /></Link>
+                <Link to='/'><img src={logo} alt="" width={150} /></Link>
             </div>
 
             <div className='col'>

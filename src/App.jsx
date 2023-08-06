@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home, Signin, Signup, AddProperty, Header, Footer, AboutUs, Career, CoreTeam, Error } from './components/component_index'
+import { Home, Signin, Signup, AddProperty, Header, Footer, AboutUs, Career, CoreTeam, Error, AllProperties } from './components/component_index'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/addproperty' element={<AddProperty />} />
+          <Route path='/properties' element={<AllProperties />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/career' element={<Career />} />
 	        <Route path='/team' element={<CoreTeam />} />

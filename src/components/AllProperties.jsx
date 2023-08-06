@@ -18,8 +18,7 @@ import house14 from '../assets/house14.jpg';
 
 import '../css/master.css'
 
-
-function House({house, details, type, facilities, price}) {
+const House = ({house, details, type, facilities, price}) => {
     return (
 
         // Individual Cards
@@ -39,53 +38,63 @@ function House({house, details, type, facilities, price}) {
             </div>
         </div>
     )
-}
+};
 
-function Property() {
+const AllProperties = () => {
   return (
     <section>
-        <div className="container rounded-3 mt-5 mb-3 pt-3 onile__for-sale border">
-            <div className='container d-flex justify-content-center align-items-center 100-w bg-primary fw-bold fs-2 rounded mb-2 pt-2 text-light text-center'>
-                <div className="row ">
+        <div className="container rounded-3 mt-3 mb-3 pt-3 onile__for-sale border">
+            <div className='container d-flex justify-content-between align-items-start 100-w mb-4'>
+                <div className="row">
                     <div className="col">
-                        <div className=''>
-                        <p >Latest Properties</p>
-                        </div>
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark rounded'>Property Listings</h1>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <Link to='/'>Back Home</Link>
                     </div>
                 </div>
             </div>
 
-            <div className="container mb-3">
+            <div className="container mb-5 border">
+                <div className="bg-primary fs-5 fw-bold mt-2 mb-2 pt-1 pb-1 text-light text-center">Property Available for Rent</div>
                 <div className="row g-3">
-                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
-                    <House house={house2} details="2, Akinola Street, Ado-Ekiti" facilities="5 bedroom flat" price="8,500,000" type="FOR SALE" />
                     <House house={house3} details="Block 11, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,300,000" type="FOR RENT" />
                     <House house={house4} details="29, Aladegbaye Avenue, Ikere-Ekiti" facilities="4 bedrrom bungalow" price="250,000" type="FOR RENT" />
                     <House house={house5} details="Opposite Fed. Univ., Ido-Ekiti" facilities="4 block of 3 bedroom flat" price="300,000" type="FOR RENT" />
-                    <House house={house6} details="33, Iworoko Area, Ado-Ekiti" facilities="4 bedroom bungalow" price="29,000,000" type="FOR SALE" />
                     <House house={house7} details="51, Iyin road, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,100,000" type="FOR RENT" />
                     <House house={house8} details="7, Ikere road, Ado-Ekiti" facilities="2 bedroom bungalow" price="200,000" type="FOR RENT" />
+                    <House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="190,000" type="FOR RENT" />
+                </div>
+            </div>
+
+            <hr className='border border-dark mb-5'/>
+
+            <div className="container mb-4 border">
+                <div className="bg-primary fs-5 fw-bold mt-2 mb-2 pt-1 pb-1 text-light text-center">Property Available for Sale</div>
+                <div className="row g-3">
+                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
+                    <House house={house2} details="2, Akinola Street, Ado-Ekiti" facilities="5 bedroom flat" price="8,500,000" type="FOR SALE" />
+                    <House house={house6} details="33, Iworoko Area, Ado-Ekiti" facilities="4 bedroom bungalow" price="29,000,000" type="FOR SALE" />
                     <House house={house9} details="5, GRA, Ado-Ekiti" facilities="3 bedroom bungalow" price="30,000,000" type="FOR SALE" />
                     <House house={house10} details="29, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="42,000,000" type="FOR SALE" />
-                    <House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="190,000" type="FOR RENT" />
                     <House house={house12} details="2, Palace road, Are-Ekiti" facilities="4 bedrrom bungalow" price="8,300,000" type="FOR SALE" />
                     <House house={house13} details="59, Afao road, Ado-Ekiti" facilities="30 room hotel" price="55,000,000" type="FOR SALE" />
                     <House house={house14} details="6, GRA, Ado-Ekiti" facilities="5 bedroom bungalow" price="42,000,000" type="FOR SALE" />
-                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
-            </div>
-
-            <div className='container d-flex justify-content-center align-items-center 100-w mt-3'>
-                <div className="row">
-                    <div className="col">
-                        <Link to='/properties'><p className='btn btn-primary btn'>Explore More Properties</p></Link>
-                    </div>
                 </div>
             </div>
-        </div>       
-        
-        </div>
+
+            <div className="container mb-5 text-end">
+                <div className="row">
+                    <div className="col">
+                        <Link to='/'>Back Home</Link>
+                    </div>
+                </div>
+            </div> 
+        </div>        
     </section>
   )
 }
 
-export default Property;
+export default AllProperties

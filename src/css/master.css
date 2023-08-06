@@ -1,4 +1,20 @@
-/* SEARCH COMPONENT */
+/* ALL CARDS */
+
+.card:hover {
+    box-shadow: 1px 1px 1px 2px rgba(184, 179, 179, 0.729);
+}
+
+.card-img-top {
+    transition: all 0.3s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.059);
+    /* box-shadow: 1px 1px 1px 2px rgba(184, 179, 179, 0.729); */
+}
+
+
+/* SEARCH OR CAROUSEL COMPONENT */
 
 .carousel-img {
     object-fit: cover;
@@ -13,13 +29,13 @@
 
 .onile__search-container-heading h1 {
     font-family: var(--font-family);
-    font-size: 4rem;
+    /* font-size: 4rem; */
     font-weight: 700;
 }
 
 .onile__search-container-heading p {
     font-family: var(--font-family);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -38,25 +54,25 @@
 
 @media screen and (max-width: 1000px) {
     .onile__search-container {
-        width:45%;
+        width:55%;
     }
 
     .onile__search-container h1 {
         font-family: var(--font-family);
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
         font-weight: 700;
     }
 
     .onile__search-container p {
         font-family: var(--font-family);
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: 1rem;
+        /* font-weight: 700; */
     }
 }
 
 @media screen and (max-width: 700px) {
     .onile__search-container {
-        width: 85%;
+        width: 75%;
         height: 90%;
     }
 
@@ -78,11 +94,25 @@
         font-size: 0.58rem;
     } */
 
-    .onile-btn-buy, .onile-btn-sell, .onile-btn-search {
-        height: 3rem;
-    }
 }
 
+@media screen and (max-width: 390px) {
+    .onile__search-container {
+        width: 100%;
+    }
+
+    .onile__search-container-heading h1 {
+        font-family: var(--font-family);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .onile__search-container-heading p {
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-weight: 400;
+    } 
+}
 
 /* ADVERTISE COMPONENT */
 
@@ -136,10 +166,6 @@
 
 
 /* PROPERTY */
-
-.card:hover {
-    box-shadow: 1px 1px 1px 2px rgba(184, 179, 179, 0.729);
-}
 
 #signup {
     border: 1px solid #fff;

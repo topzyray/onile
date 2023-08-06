@@ -1,11 +1,21 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
 const AboutUs = () => {
   return (
-    <div className='text-center m-5 p-5'>
-        <h1>About Onile</h1>
-        <h3>This Section is under development. Please check back later. Thank you.</h3>
-    </div>
+    <section className='container mt-5 mb-5 p-3'>
+      <div className="row text-center">
+        <div className="col">
+          <img src={logo} alt="logo" width={250} className='mb-4'/>
+        </div>
+      </div>
+      <div className="row text-center">
+        <div className="col">      
+        <h2 className='fw-bold text-primary mb-4'>About Us</h2>
+        <h5>Onile is a leading real estate listing platform in Ekiti with property listing for sale and for rent. We connect property hunters with property agents and owners for them to have a smooth and easy property search.</h5>
+        </div>
+      </div>
+    </section>
   )
 }
 
