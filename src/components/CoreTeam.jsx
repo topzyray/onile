@@ -12,7 +12,7 @@ function Team({image, name, role, about, linkedin, twitter}) {
 
         <div className="col-12 col-md-6 col-lg-4">
             <div className="card text-center p-3" >
-                <div><img src={image} alt="Photos of Onile Core Team" className='card-img-top border' style={{borderRadius: "50%", width: "300px", height: "300px"}} /></div>
+                <div><img src={image} alt="Photos of Onile Core Team" className='card-img-top img-responsive border' style={{borderRadius: "50%", width: "250px", height: "250px"}} /></div>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <ul className='list-group list-group-flush'>
@@ -33,7 +33,7 @@ const AboutUs = () => {
   return (
     <section>
         <div className="container rounded-5 mt-3 mb-3 pt-3 border">
-            <div className='text-center'><button className='btn btn-primary btn-lg text-center p-2 m-5 fw-bold fs-1'>Meet Our Core Team at ONILE</button></div>
+            <div className='text-center'><button className='btn btn-primary btn-lg text-center p-2 m-5 fw-bold fs-1'>Meet Our Team at ONILE</button></div>
 
             <div className="container mb-3">
                 <div className="row g-3">

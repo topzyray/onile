@@ -13,8 +13,8 @@ function Advertise() {
           <div className="col bg-primary">
             <p className='advert-text text-white'><span className='text-dark'>Take Us With You. </span><br/> Keep <span className='text-dark'>ONILE</span> in the palm of your hand throughout your rental journey.</p>
           </div>
-          <div className="col">
-            <img src={advert_image} alt="Advertise Image" className='advert-img' />
+          <div className="d-flex col-12 col-lg-6 justify-content-center align-items-center">
+            <img src={advert_image} alt="Advertise Image" className='img-fluid' />
           </div>
         </div>
       </div>

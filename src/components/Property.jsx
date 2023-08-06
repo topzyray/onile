@@ -1,4 +1,5 @@
 import React from 'react';
+
 import house1 from '../assets/house1.jpg';
 import house2 from '../assets/house2.jpg';
 import house3 from '../assets/house3.jpg';
@@ -25,7 +26,7 @@ function House({house, details, type, facilities, price}) {
         <div className="col-12 col-md-6 col-lg-4">
             <div className="card">
                 <div className="card-type">{type}</div>
-                <img src={house} alt="Image of Houses" className='card-img-top rounded-3' width={300} height={300} />
+                <img src={house} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
                 <div className="card-body">
                     <h5 className='card-title'>N{price}</h5>
                     <p className='card-text'>{details}</p>
@@ -42,9 +43,6 @@ function House({house, details, type, facilities, price}) {
 function Property() {
   return (
     <section>
-
-        {/* For price Section */}
-
         <div className="container rounded-5 mt-3 mb-3 pt-3 onile__for-sale border">
             <div className='container d-flex justify-content-center align-items-center 100-w'>
                 <div className="row">
