@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import olutomiwa from '../assets/olutomiwa.jpg'
 import olayinka from '../assets/olayinka.jpg'
 import tope from '../assets/tope.png'
@@ -32,8 +34,20 @@ function Team({image, name, role, about, linkedin, twitter}) {
 const AboutUs = () => {
   return (
     <section>
-        <div className="container rounded-5 mt-3 mb-3 pt-3 border">
-            <div className='text-center'><button className='btn btn-primary btn-lg text-center p-2 m-5 fw-bold fs-1'>Meet Our Team at ONILE</button></div>
+        <div className="container rounded-2 mt-3 mb-3 pt-3 border">
+            {/* <div className='text-center'><button className='btn btn-primary btn-lg text-center p-2 m-5 fw-bold fs-1'>Meet Our Team at ONILE</button></div> */}
+            <div className='container bg-primary text-white d-flex justify-content-between align-items-start 100-w mb-4'>
+                <div className="row">
+                    <div className="col">
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2'>Meet Our Team at ONILE</h1>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <Link to='/' className='text-white'>Back Home</Link>
+                    </div>
+                </div>
+            </div>
 
             <div className="container mb-3">
                 <div className="row g-3">
@@ -44,6 +58,16 @@ const AboutUs = () => {
                     <Team image={tope} name="Tope Taiwo" role="Front-End Developer" about="A tech lover, cybersecurity enthusiast and one of the front-end developer on the Onile project." linkedin="https://www.linkedin.com/in/taiwotopesunday/" twitter="https://twitter.com/taiwotopesunday/" />
                     <Team image={akinloye} name="Akinloye Adegboye" role="Product Designer" about="A freelance Graphic designer, UI/UX Designer and product designer on the ONILE project." linkedin="https://www.linkedin.com/in/adegboye-akinloye-741291256/" twitter="https://twitter.com/hay_keyz" />
                     <Team image={olutomiwa} name="Olutomiwa Olatunji" role="Backend Developer" about="An Engineering student in FUOYE, currently acquiring skills in Cybersecurity and Web3 and backend developer on the Onile project." linkedin="https://www.linkedin.com/in/olutomiwa-olatunji-421a03205/" twitter="#" />
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div className="container mb-5 text-end">
+            <div className="row">
+                <div className="col">
+                    <Link to='/'>Back Home</Link>
                 </div>
             </div>
         </div>

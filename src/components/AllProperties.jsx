@@ -47,7 +47,7 @@ const AllProperties = () => {
             <div className='container d-flex justify-content-between align-items-start 100-w mb-4'>
                 <div className="row">
                     <div className="col">
-                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark rounded'>Property Listings</h1>
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Property Listings</h1>
                     </div>
                 </div>
                 <div className="row">

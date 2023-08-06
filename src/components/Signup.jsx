@@ -9,6 +9,14 @@ function Signup() {
         <div className='form_container p-5 m-5 rounded bg-white' id="onile__signup-forms">
         <h2 className='text-center'>Create  an account </h2>
 
+        <div className="container mb-1 text-end">
+            <div className="row">
+                <div className="col">
+                    <Link to='/'>Back Home</Link>
+                </div>
+            </div>
+        </div>
+
         <img src={divider} alt="divider" width={'100%'} className='mt-3 mb-3' />
             <form action="#">
                 

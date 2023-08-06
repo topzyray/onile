@@ -45,12 +45,10 @@ function Property() {
   return (
     <section>
         <div className="container rounded-3 mt-5 mb-3 pt-3 onile__for-sale border">
-            <div className='container d-flex justify-content-center align-items-center 100-w bg-primary fw-bold fs-2 rounded mb-2 pt-2 text-light text-center'>
+            <div className='container'>
                 <div className="row ">
                     <div className="col">
-                        <div className=''>
-                        <p >Latest Properties</p>
-                        </div>
+                        <div className="bg-primary fs-4 fw-bold mt-2 mb-2 pt-1 pb-1 text-light text-center">Latest Properties</div>
                     </div>
                 </div>
             </div>
