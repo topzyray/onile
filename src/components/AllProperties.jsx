@@ -24,7 +24,7 @@ const House = ({house, details, type, facilities, price}) => {
         // Individual Cards
 
         <div className="col-12 col-md-6 col-lg-4">
-            <div className="card">
+            <div className="card onile-card">
                 <div className="card-type">{type}</div>
                 <img src={house} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
                 <div className="card-body">

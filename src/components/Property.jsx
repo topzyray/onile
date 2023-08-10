@@ -1,47 +1,62 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import '../server'
 import { Link } from 'react-router-dom'
-
-import house1 from '../assets/house1.jpg';
-import house2 from '../assets/house2.jpg';
-import house3 from '../assets/house3.jpg';
-import house4 from '../assets/house4.jpg';
-import house5 from '../assets/house5.jpg';
-import house6 from '../assets/house6.jpg';
-import house7 from '../assets/house7.jpg';
-import house8 from '../assets/house8.jpg';
-import house9 from '../assets/house9.jpg';
-import house10 from '../assets/house10.jpg';
-import house11 from '../assets/house11.jpg';
-import house12 from '../assets/house12.jpg';
-import house13 from '../assets/house13.jpg';
-import house14 from '../assets/house14.jpg';
 
 import '../css/master.css'
 
 
-function House({house, details, type, facilities, price}) {
-    return (
+// function House({house, details, type, facilities, price}) {
+//     return (
 
-        // Individual Cards
+//         // Individual Cards
 
-        <div className="col-12 col-md-6 col-lg-4">
-            <div className="card">
-                <div className="card-type">{type}</div>
-                <img src={house} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
-                <div className="card-body">
-                    <h5 className='card-title'>N{price}</h5>
-                    <p className='card-text'>{details}</p>
-                    <p className='card-text'>{facilities}</p>
-                </div>
-                <div className="card-footer">
-                    <button type='button' className='btn btn-outline-primary' onClick={() => alert('Send e-Mail to: support@onile.com')}>View Details</button>
-                </div>
-            </div>
-        </div>
-    )
-}
+//         <div className="col-12 col-md-6 col-lg-4">
+//             <div className="card">
+//                 <div className="card-type">{type}</div>
+//                 <img src={house} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
+//                 <div className="card-body">
+//                     <h5 className='card-title'>N{price}</h5>
+//                     <p className='card-text'>{details}</p>
+//                     <p className='card-text'>{facilities}</p>
+//                 </div>
+//                 <div className="card-footer">
+//                     <button type='button' className='btn btn-outline-primary' onClick={() => alert('Send e-Mail to: support@onile.com')}>View Details</button>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
 
 function Property() {
+
+    const [property, setProperty] = useState([])
+    
+    useEffect(() => {
+        fetch("api/properties")
+            .then(res => res.json())
+            .then(data => setProperty(data.properties))
+            .catch(err => console.error(err))
+        }, [])
+
+    const properyElements = property.map(property => (
+        <div className="col-12 col-md-6 col-lg-4" key={property.id}>
+             <Link to={`/properties/${property.id}`} style={{textDecoration: "none"}}>
+                <div className="card onile-card" >
+                    <div className="card-type">{property.type.toUpperCase()}</div>
+                    <img src={property.houseImage} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
+                    <div className="card-body">
+                        <h5 className='card-title'>N{property.price}</h5>
+                        <p className='card-text'>{property.details}</p>
+                        <p className='card-text'>{property.facilities}</p>
+                    </div>
+                    {/* <div className="card-footer">
+                        <button type='button' className='btn btn-outline-primary' onClick={() => alert('Send e-Mail to: support@onile.com')}>View Details</button>
+                    </div> */}
+                </div>
+             </Link>
+         </div>
+    ))
+
   return (
     <section>
         <div className="container rounded-3 mt-5 mb-3 pt-3 onile__for-sale border">
@@ -55,31 +70,17 @@ function Property() {
 
             <div className="container mb-3">
                 <div className="row g-3">
-                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
-                    <House house={house2} details="2, Akinola Street, Ado-Ekiti" facilities="5 bedroom flat" price="8,500,000" type="FOR SALE" />
-                    <House house={house3} details="Block 11, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,300,000" type="FOR RENT" />
-                    <House house={house4} details="29, Aladegbaye Avenue, Ikere-Ekiti" facilities="4 bedrrom bungalow" price="250,000" type="FOR RENT" />
-                    <House house={house5} details="Opposite Fed. Univ., Ido-Ekiti" facilities="4 block of 3 bedroom flat" price="300,000" type="FOR RENT" />
-                    <House house={house6} details="33, Iworoko Area, Ado-Ekiti" facilities="4 bedroom bungalow" price="29,000,000" type="FOR SALE" />
-                    <House house={house7} details="51, Iyin road, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,100,000" type="FOR RENT" />
-                    <House house={house8} details="7, Ikere road, Ado-Ekiti" facilities="2 bedroom bungalow" price="200,000" type="FOR RENT" />
-                    <House house={house9} details="5, GRA, Ado-Ekiti" facilities="3 bedroom bungalow" price="30,000,000" type="FOR SALE" />
-                    <House house={house10} details="29, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="42,000,000" type="FOR SALE" />
-                    <House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="190,000" type="FOR RENT" />
-                    <House house={house12} details="2, Palace road, Are-Ekiti" facilities="4 bedrrom bungalow" price="8,300,000" type="FOR SALE" />
-                    <House house={house13} details="59, Afao road, Ado-Ekiti" facilities="30 room hotel" price="55,000,000" type="FOR SALE" />
-                    <House house={house14} details="6, GRA, Ado-Ekiti" facilities="5 bedroom bungalow" price="42,000,000" type="FOR SALE" />
-                    <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
-            </div>
+                    {properyElements}
+                </div>
 
-            <div className='container d-flex justify-content-center align-items-center 100-w mt-3'>
-                <div className="row">
-                    <div className="col">
-                        <Link to='/properties'><p className='btn btn-primary btn'>Explore More Properties</p></Link>
+                <div className='container d-flex justify-content-center align-items-center 100-w mt-3'>
+                    <div className="row">
+                        <div className="col">
+                            <Link to='/properties'><p className='btn btn-primary btn'>Explore More Properties</p></Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>       
+            </div>       
         
         </div>
     </section>
@@ -87,3 +88,39 @@ function Property() {
 }
 
 export default Property;
+
+
+// Previous versions
+
+
+// import house1 from '../assets/house1.jpg';
+// import house2 from '../assets/house2.jpg';
+// import house3 from '../assets/house3.jpg';
+// import house4 from '../assets/house4.jpg';
+// import house5 from '../assets/house5.jpg';
+// import house6 from '../assets/house6.jpg';
+// import house7 from '../assets/house7.jpg';
+// import house8 from '../assets/house8.jpg';
+// import house9 from '../assets/house9.jpg';
+// import house10 from '../assets/house10.jpg';
+// import house11 from '../assets/house11.jpg';
+// import house12 from '../assets/house12.jpg';
+// import house13 from '../assets/house13.jpg';
+// import house14 from '../assets/house14.jpg';
+
+
+{/* <House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" />
+<House house={house2} details="2, Akinola Street, Ado-Ekiti" facilities="5 bedroom flat" price="8,500,000" type="FOR SALE" />
+<House house={house3} details="Block 11, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,300,000" type="FOR RENT" />
+<House house={house4} details="29, Aladegbaye Avenue, Ikere-Ekiti" facilities="4 bedrrom bungalow" price="250,000" type="FOR RENT" />
+<House house={house5} details="Opposite Fed. Univ., Ido-Ekiti" facilities="4 block of 3 bedroom flat" price="300,000" type="FOR RENT" />
+<House house={house6} details="33, Iworoko Area, Ado-Ekiti" facilities="4 bedroom bungalow" price="29,000,000" type="FOR SALE" />
+<House house={house7} details="51, Iyin road, Ado-Ekiti" facilities="4 bedroom bungalow" price="1,100,000" type="FOR RENT" />
+<House house={house8} details="7, Ikere road, Ado-Ekiti" facilities="2 bedroom bungalow" price="200,000" type="FOR RENT" />
+<House house={house9} details="5, GRA, Ado-Ekiti" facilities="3 bedroom bungalow" price="30,000,000" type="FOR SALE" />
+<House house={house10} details="29, GRA, Ado-Ekiti" facilities="4 bedroom bungalow" price="42,000,000" type="FOR SALE" />
+<House house={house11} details="29, Adebayo Street, Ado-Ekiti" facilities="4 bedrrom bungalow" price="190,000" type="FOR RENT" />
+<House house={house12} details="2, Palace road, Are-Ekiti" facilities="4 bedrrom bungalow" price="8,300,000" type="FOR SALE" />
+<House house={house13} details="59, Afao road, Ado-Ekiti" facilities="30 room hotel" price="55,000,000" type="FOR SALE" />
+<House house={house14} details="6, GRA, Ado-Ekiti" facilities="5 bedroom bungalow" price="42,000,000" type="FOR SALE" />
+<House house={house1} details="12, Adebayo Street, Ado-Ekiti" facilities="5 bedroom flat" price="12,000,000" type="FOR SALE" /> */}

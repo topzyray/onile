@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselImage from './CarouselImage'
 import '../css/master.css'
@@ -24,8 +26,8 @@ const CarouselComponent = () => {
                 </div>
                 <div className='text-center'>
                     <div className='d-flex justify-content-center align-items-center mb-2'>
-                        <button type='button' className='btn btn-light m-1'>BUY</button>
-                        <button type='button' className='btn btn-light m-1'>SELL</button>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>BUY</button></Link>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>SELL</button></Link>
                     </div>
                     <div className='input-group mb-3'>
                         <input type="text" className="form-control" placeholder='Search properties' aria-label="Search properties" aria-describedby='button-addon' />
@@ -46,8 +48,8 @@ const CarouselComponent = () => {
                 </div>
                 <div className='text-center'>
                     <div className='d-flex justify-content-center align-items-center mb-2'>
-                        <button type='button' className='btn btn-light m-1'>BUY</button>
-                        <button type='button' className='btn btn-light m-1'>SELL</button>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>BUY</button></Link>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>SELL</button></Link>
                     </div>
                     <div className='input-group mb-3'>
                         <input type="text" className="form-control" placeholder='Search properties' aria-label="Search properties" aria-describedby='button-addon' />
@@ -68,8 +70,8 @@ const CarouselComponent = () => {
                 </div>
                 <div className='text-center'>
                     <div className='d-flex justify-content-center align-items-center mb-2'>
-                        <button type='button' className='btn btn-light m-1'>BUY</button>
-                        <button type='button' className='btn btn-light m-1'>SELL</button>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>BUY</button></Link>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>SELL</button></Link>
                     </div>
                     <div className='input-group mb-3'>
                         <input type="text" className="form-control" placeholder='Search properties' aria-label="Search properties" aria-describedby='button-addon' />
@@ -90,8 +92,8 @@ const CarouselComponent = () => {
                 </div>
                 <div className='text-center'>
                     <div className='d-flex justify-content-center align-items-center mb-2'>
-                        <button type='button' className='btn btn-light m-1'>BUY</button>
-                        <button type='button' className='btn btn-light m-1'>SELL</button>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>BUY</button></Link>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>SELL</button></Link>
                     </div>
                     <div className='input-group mb-3'>
                         <input type="text" className="form-control" placeholder='Search properties' aria-label="Search properties" aria-describedby='button-addon' />
@@ -112,8 +114,8 @@ const CarouselComponent = () => {
                 </div>
                 <div className='text-center'>
                     <div className='d-flex justify-content-center align-items-center mb-2'>
-                        <button type='button' className='btn btn-light m-1'>BUY</button>
-                        <button type='button' className='btn btn-light m-1'>SELL</button>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>BUY</button></Link>
+                        <Link to="/signin"><button type='button' className='btn btn-light m-1'>SELL</button></Link>
                     </div>
                     <div className='input-group mb-3'>
                         <input type="text" className="form-control" placeholder='Search properties' aria-label="Search properties" aria-describedby='button-addon' />
