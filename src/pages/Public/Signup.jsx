@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import googleLogo from '../assets/google.svg'
-import divider from '../assets/divider.png'
+import googleLogo from '../../assets/google.svg'
+import divider from '../../assets/divider.png'
 
 function Signup() {
   return (

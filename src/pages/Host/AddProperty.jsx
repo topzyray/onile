@@ -3,7 +3,7 @@ import React from 'react'
 function AddProperty() {
     return (
         <div>
-            Add your property here
+            <h1>Add your property here</h1>
         </div>
     )
 }

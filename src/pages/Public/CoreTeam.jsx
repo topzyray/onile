@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import olutomiwa from '../assets/olutomiwa.jpg'
-import olayinka from '../assets/olayinka.jpg'
-import tope from '../assets/tope.png'
-import mary from '../assets/mary.jpg'
-import akinloye from '../assets/akinloye.jpg'
-import joshua from '../assets/joshua.jpg'
-import akpevwe from '../assets/akpevwe.jpg'
+import olutomiwa from '../../assets/olutomiwa.jpg'
+import olayinka from '../../assets/olayinka.jpg'
+import tope from '../../assets/tope.png'
+import mary from '../../assets/mary.jpg'
+import akinloye from '../../assets/akinloye.jpg'
+import joshua from '../../assets/joshua.jpg'
+import akpevwe from '../../assets/akpevwe.jpg'
 
 function Team({image, name, role, about, linkedin, twitter}) {
     return (

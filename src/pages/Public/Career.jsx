@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Career = () => {
@@ -12,11 +11,11 @@ const Career = () => {
       </div>
 
       <div className="container mb-1 text-end">
-      <div className="row">
-          <div className="col">
-              <Link to='/'>Back Home</Link>
-          </div>
-      </div>
+        <div className="row">
+            <div className="col">
+                <Link to='/'>Back Home</Link>
+            </div>
+        </div>
       </div>
     </div>
   )
