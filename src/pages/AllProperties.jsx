@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import '../server'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 
 import '../css/master.css'
 
 function AllProperties() {
+
+    const [searchParams, setSearchParams] = useSearchParams()
+    const typeFilter = searchParams.get('type')
 
     const [property, setProperty] = useState([])
     
@@ -15,13 +18,54 @@ function AllProperties() {
             .catch(err => console.error(err))
         }, [])
 
+    const displayedProperties = typeFilter ? property.filter(property => property.type.toLowerCase().trim() === typeFilter) : property
+
+    const properyElements = displayedProperties.map(property => (
+        <div className="col-12 col-md-6 col-lg-4" key={property.id}>
+                <Link to={`/properties/${property.id}`} style={{textDecoration: "none"}}>
+                <div className="card onile-card" >
+                    <div className="card-type">{property.type.toUpperCase()}</div>
+                    <img src={property.houseImage} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
+                    <div className="card-body">
+                        <h5 className='card-title'>N{property.price}</h5>
+                        <p className='card-text'>{property.details}</p>
+                        <p className='card-text'>{property.facilities}</p>
+                    </div>
+                </div>
+                </Link>
+            </div>
+    ))
+
   return (
     <section>
         <div className="container rounded-3 mt-5 mb-3 pt-3 onile__for-sale border">
+            {/* Filter properties */}
+
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Filter Properties by Categories:</h1>
+                        <button 
+                            onClick={() => setSearchParams({type: "for sale"})}
+                            className="btn btn-outline-primary px-4 mx-1"
+                        >For Sale</button>
+                        <button 
+                            onClick={() => setSearchParams({type: "for rent"})}
+                            className="btn btn-outline-primary px-4 mx-1"
+                        >For Rent</button>
+                        
+                        <button 
+                            onClick={() => setSearchParams({})}
+                            className="btn btn-outline-danger px-4 mx-1"
+                        >Clear filter</button>
+                    </div>
+                </div>
+            </div>
+
             <div className='container d-flex justify-content-between align-items-start 100-w mb-4'>
                 <div className="row">
                     <div className="col">
-                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Property Listings</h1>
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Available Properties</h1>
                     </div>
                 </div>
                 <div className="row">
@@ -33,58 +77,14 @@ function AllProperties() {
 
 
             <div className="container mb-5 border">
-                <div className="bg-primary fs-5 fw-bold mt-2 mb-2 pt-1 pb-1 text-light text-center">Property Available for Rent</div>
+                <div className="bg-primary fs-5 fw-bold mt-3 mb-3 pt-2 pb-2 text-light text-center">{typeFilter ? `Properties available ${typeFilter}` : "All available properties" }</div>
                 <div className="row g-3">
 
-                    {/* Filtering For Rent Properties */}
-
-                    {property.map(property => {
-                        return property.type == 'for rent' &&
-                            <div className="col-12 col-md-6 col-lg-4" key={property.id}>
-                                <Link to={`/properties/${property.id}`} style={{textDecoration: "none"}}>
-                                    <div className="card onile-card" >
-                                        <div className="card-type">{property.type.toUpperCase()}</div>
-                                        <img src={property.houseImage} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
-                                        <div className="card-body">
-                                            <h5 className='card-title'>N{property.price}</h5>
-                                            <p className='card-text'>{property.details}</p>
-                                            <p className='card-text'>{property.facilities}</p>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        })}
+                    {properyElements}
 
                 </div>
             </div>
 
-            <hr className='border border-dark mb-5'/>
-
-            <div className="container mb-4 border">
-                <div className="bg-primary fs-5 fw-bold mt-2 mb-2 pt-1 pb-1 text-light text-center">Property Available for Sale</div>
-                <div className="row g-3">
-
-                    {/* Filtering For Sale Properties */}
-
-                    {property.map(property => {
-                        return property.type == 'for sale' &&
-                            <div className="col-12 col-md-6 col-lg-4" key={property.id}>
-                                <Link to={`/properties/${property.id}`} style={{textDecoration: "none"}}>
-                                    <div className="card onile-card" >
-                                        <div className="card-type">{property.type.toUpperCase()}</div>
-                                        <img src={property.houseImage} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
-                                        <div className="card-body">
-                                            <h5 className='card-title'>N{property.price}</h5>
-                                            <p className='card-text'>{property.details}</p>
-                                            <p className='card-text'>{property.facilities}</p>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        })}
-
-                </div>
-            </div>       
         </div>
 
         <div className="container mb-5 text-end">
@@ -101,7 +101,33 @@ function AllProperties() {
 export default AllProperties;
 
 
+// <hr className='border border-dark mb-5'/>
 
+// <div className="container mb-4 border">
+//     <div className="bg-primary fs-5 fw-bold mt-2 mb-2 pt-1 pb-1 text-light text-center">Property Available for Sale</div>
+//     <div className="row g-3">
+
+//         {/* Filtering For Sale Properties */}
+
+//         {property.map(property => {
+//             return property.type == 'for sale' &&
+//                 <div className="col-12 col-md-6 col-lg-4" key={property.id}>
+//                     <Link to={`/properties/${property.id}`} style={{textDecoration: "none"}}>
+//                         <div className="card onile-card" >
+//                             <div className="card-type">{property.type.toUpperCase()}</div>
+//                             <img src={property.houseImage} alt="Image of Houses" className='card-img-top img-responsive rounded-3' width={300} height={300} />
+//                             <div className="card-body">
+//                                 <h5 className='card-title'>N{property.price}</h5>
+//                                 <p className='card-text'>{property.details}</p>
+//                                 <p className='card-text'>{property.facilities}</p>
+//                             </div>
+//                         </div>
+//                     </Link>
+//                 </div>
+//             })}
+
+//     </div>
+// </div>       
 
 
 

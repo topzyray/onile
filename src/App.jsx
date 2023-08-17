@@ -27,12 +27,15 @@ function App() {
           <Route index element={<Home />} />
           <Route path='signin' element={<Signin />} />
           <Route path='signup' element={<Signup />} />
-          <Route path='properties' element={<AllProperties />} />
-          <Route path='/properties/:id' element={<PropertyDetails />} />
           <Route path='about' element={<AboutUs />} />
           <Route path='career' element={<Career />} />
 	        <Route path='team' element={<CoreTeam />} />
           <Route path='*' element={<Error />}/>
+
+          <Route path='properties'>
+            <Route index element={<AllProperties />} />
+            <Route path=':id' element={<PropertyDetails />} />
+          </Route>
 
           {/* Host Routes */}
 

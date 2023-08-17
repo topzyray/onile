@@ -22,17 +22,17 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to='/properties'><Button variant="light" className='fw-bold text-dark shadow'>FOR SALE</Button></Nav.Link>
-            <Nav.Link as={Link} to='/properties'><Button variant="light" className='fw-bold text-dark shadow'>FOR RENT</Button></Nav.Link>
+            <Nav.Link as={Link} to='properties?type=for+sale'><Button variant="light" className='fw-bold text-dark shadow'>FOR SALE</Button></Nav.Link>
+            <Nav.Link as={Link} to='properties?type=for+rent'><Button variant="light" className='fw-bold text-dark shadow'>FOR RENT</Button></Nav.Link>
             <Nav.Link as={Link} to='https://docs.google.com/forms/d/e/1FAIpQLSeyTSCuuT6n4idy9QmQNb_3D9kmHfk8BJHfe-4XQ2j5JJYl0Q/viewform?usp=sf_link' target='_blank'><Button variant="primary" className='fw-bold shadow'>Add Property</Button></Nav.Link>
           </Nav>
           <Nav className="me-auto">
-            {!isLoggedIn && <Nav.Link as={Link} to='/signin'><Button variant="outline-secondary" className='fw-bold text-dark shadow'>Sign In</Button></Nav.Link>}
-            {!isLoggedIn && <Nav.Link as={Link} to='/signup'><Button variant="primary" className='fw-bold shadow'>Sign Up</Button></Nav.Link>}
+            {!isLoggedIn && <Nav.Link as={Link} to='signin'><Button variant="outline-secondary" className='fw-bold text-dark shadow'>Sign In</Button></Nav.Link>}
+            {!isLoggedIn && <Nav.Link as={Link} to='signup'><Button variant="primary" className='fw-bold shadow'>Sign Up</Button></Nav.Link>}
           </Nav>
           <Nav className="me-auto">
-            {isLoggedIn && <Nav.Link as={Link} to='/dashboard'><Button variant="outline-secondary" className='fw-bold text-dark shadow'><FaRegEnvelope/></Button></Nav.Link>}
-            {isLoggedIn && <Nav.Link as={Link} to='/dashboard'><Button variant="outline-secondary" className='fw-bold text-dark shadow'><CgProfile /> Name</Button></Nav.Link>}
+            {isLoggedIn && <Nav.Link as={Link} to='dashboard'><Button variant="outline-secondary" className='fw-bold text-dark shadow'><FaRegEnvelope/></Button></Nav.Link>}
+            {isLoggedIn && <Nav.Link as={Link} to='dashboard'><Button variant="outline-secondary" className='fw-bold text-dark shadow'><CgProfile /> Name</Button></Nav.Link>}
           </Nav>
         </Navbar.Collapse>
       </Container>

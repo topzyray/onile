@@ -20,10 +20,10 @@ function Footer() {
 
             <div className='col'>
                 <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Links</button> <br/>
-		        <Link to="/team"><button className='btn btn-sm btn-link'>ONILE Team</button></Link> <br/>
+		        <Link to="team"><button className='btn btn-sm btn-link'>ONILE Team</button></Link> <br/>
                 <button className='btn btn-sm btn-link' onClick={() => alert("...Our partners include: Ekiti State Government, Tech4Dev and many others....")}>Partners</button> <br/>
-                <Link to="/career"><button className='btn btn-sm btn-link'>Career</button></Link> <br/>
-		        <Link to="/about"><button className='btn btn-sm btn-link'>About Us</button></Link>
+                <Link to="career"><button className='btn btn-sm btn-link'>Career</button></Link> <br/>
+		        <Link to="about"><button className='btn btn-sm btn-link'>About Us</button></Link>
                 
             </div>
 

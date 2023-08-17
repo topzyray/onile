@@ -22,7 +22,7 @@ const PropertyDetails = () => {
             <div className='container pb-4'>
                 <div className="row">
                     <div className="col">
-                        <Link to='/properties'>Back to Properties</Link>
+                        <Link to='..' end="true">Back to Properties</Link>
                     </div>
                 </div>
             </div>
