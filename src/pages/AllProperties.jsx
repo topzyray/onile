@@ -47,25 +47,27 @@ function AllProperties() {
                         <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Filter Properties by Categories:</h1>
                         <button 
                             onClick={() => setSearchParams({type: "for sale"})}
-                            className="btn btn-outline-primary px-4 mx-1"
+                            className="btn btn-outline-primary mx-1"
                         >For Sale</button>
                         <button 
                             onClick={() => setSearchParams({type: "for rent"})}
-                            className="btn btn-outline-primary px-4 mx-1"
+                            className="btn btn-outline-primary mx-1"
                         >For Rent</button>
                         
                         <button 
                             onClick={() => setSearchParams({})}
-                            className="btn btn-outline-danger px-4 mx-1"
+                            className="btn btn-outline-danger mx-1"
                         >Clear filter</button>
                     </div>
                 </div>
             </div>
 
+            <hr style={{border: "3px solid"}} />
+
             <div className='container d-flex justify-content-between align-items-start 100-w mb-4'>
                 <div className="row">
                     <div className="col">
-                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Available Properties</h1>
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-1 text-dark'>Available Properties</h1>
                     </div>
                 </div>
                 <div className="row">

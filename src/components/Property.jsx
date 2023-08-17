@@ -16,7 +16,7 @@ function Property() {
             .catch(err => console.error(err))
         }, [])
 
-    const properyElements = property.map(property => (
+    const properyElements = property.slice(5).map(property => (
         <div className="col-12 col-md-6 col-lg-4" key={property.id}>
              <Link to={`properties/${property.id}`} style={{textDecoration: "none"}}>
                 <div className="card onile-card" >
