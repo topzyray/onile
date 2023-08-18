@@ -44,7 +44,11 @@ function AllProperties() {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark'>Filter Properties by Categories:</h1>
+                        <h1 className='fw-bold fs-2 mt-2 mb-2 p-2 text-dark' id="propertyFilter">Filter Properties by Categories:</h1>
+                        {/* <select name="propertyFilter" id="propertyFilter">
+                            <option value="for sale" onClick={() => setSearchParams({type: "for sale"})}>For Sale</option>
+                            <option value="for rent" onClick={() => setSearchParams({type: "for rent"})}>For Rent</option>
+                        </select> */}
                         <button 
                             onClick={() => setSearchParams({type: "for sale"})}
                             className="btn btn-outline-primary mx-1"

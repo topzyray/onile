@@ -14,12 +14,12 @@ function Footer() {
             </div>
 
             <div className='col'>
-                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Contact us</button> <br/>
+                <h2 className='fw-bold fs-4 footer-btn underline'>Contact us</h2>
                 <p><span className="fw-bold">Support:<br/> <a href="mailto:support@onile.com" target="_blank">support@onile.com</a> <br/> +23480333-ONILE</span></p>
             </div>
 
             <div className='col'>
-                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Links</button> <br/>
+            <h2 className='fw-bold fs-4 footer-btn'>Links</h2>
 		        <Link to="team"><button className='btn btn-sm btn-link'>ONILE Team</button></Link> <br/>
                 <button className='btn btn-sm btn-link' onClick={() => alert("...Our partners include: Ekiti State Government, Tech4Dev and many others....")}>Partners</button> <br/>
                 <Link to="career"><button className='btn btn-sm btn-link'>Career</button></Link> <br/>
@@ -28,12 +28,12 @@ function Footer() {
             </div>
 
             <div className='col'>
-                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Advertise with us</button> <br/>
+            <h2 className='fw-bold fs-4 footer-btn'>Advertise with us</h2>
                 <Link to='https://docs.google.com/forms/d/e/1FAIpQLSeyTSCuuT6n4idy9QmQNb_3D9kmHfk8BJHfe-4XQ2j5JJYl0Q/viewform?usp=sf_link' target='_blank'><button className='btn btn-sm btn-outline-primary footer-btn'>Add a property</button></Link>
             </div>
 
             <div className='col'>
-                <button className='btn btn-sm btn-link fw-bold fs-4 footer-btn'>Connect with us</button> <br/>
+            <h2 className='fw-bold fs-4 footer-btn'>Connet with us</h2>
                 <img src={facebook} alt="Facebook icon" className='p-1 social' />
                 <img src={instagram} alt="Instagram icon" className='p-1 social' />
             </div>

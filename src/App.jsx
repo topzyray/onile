@@ -39,11 +39,11 @@ function App() {
 
           {/* Host Routes */}
 
-          <Route path='dashboard' element={<DashboardLayout />}>
+          {/* <Route path='dashboard' element={<DashboardLayout />}>
             <Route index element={<Listing />} />
             <Route path='addproperty' element={<AddProperty />} />
             <Route path='account' element={<Account />} />
-          </Route>
+          </Route> */}
           
         </Route>
       </Routes>
