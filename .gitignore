@@ -25,5 +25,9 @@ dist-ssr
 
 # Other
 Todos.md
-./src/config
-./src/testing
+firebase.js
+DashboardLayout.jsx
+DashboardSidebar.jsx
+DBTest.jsx
+Header-Old.jsx
+Signin-auth-testing.jsx
